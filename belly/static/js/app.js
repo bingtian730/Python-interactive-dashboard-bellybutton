@@ -1,10 +1,4 @@
-let allowCrossDomain = function(req, res, next) {
-  res.header('Access-Control-Allow-Origin', "*");
-  res.header('Access-Control-Allow-Headers', "*");
-  next();
-}
-app.use(allowCrossDomain);
-
+fetch('http://127.0.0.1:5000/',{mode:'no-cors'});
 
 
 
