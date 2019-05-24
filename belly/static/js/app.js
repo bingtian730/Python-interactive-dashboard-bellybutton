@@ -1,3 +1,13 @@
+let allowCrossDomain = function(req, res, next) {
+  res.header('Access-Control-Allow-Origin', "*");
+  res.header('Access-Control-Allow-Headers', "*");
+  next();
+}
+app.use(allowCrossDomain);
+
+
+
+
 function buildMetadata(sample) {
 
   // @TODO: Complete the following function that builds the metadata panel
